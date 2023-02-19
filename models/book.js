@@ -18,10 +18,8 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        // notNull: {
-        //   msg: 'Please provide value for title.'
-        // },
         notEmpty: {
+          //ensures title is required
           msg: 'Please provide value for title.',
         },
       },
@@ -30,10 +28,8 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        // notNull: {
-        //   msg: 'Please provide value for author.'
-        // },
         notEmpty: {
+          //ensures author is required
           msg: 'Please provide value for author.',
         },
       },
